@@ -1,3 +1,7 @@
 mvn clean
 mvn compile
-mvn exec:java -Dexec.mainClass="com.hand.Exam1.App"
+mvn tomcat:run
+网页打开http://localhost:8080/Exam1/index.jsp
+
+
+数据库用户名root 无密码
