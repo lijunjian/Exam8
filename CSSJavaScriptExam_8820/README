@@ -1,8 +1,0 @@
-mvn clean
-mvn compile
-mvn tomcat:run
-网页打开http://localhost:8080/CSSJavaScriptExam_8820/index.jsp
-
-
-数据库用户名root 无密码
-管理员账号 1924密码1924
