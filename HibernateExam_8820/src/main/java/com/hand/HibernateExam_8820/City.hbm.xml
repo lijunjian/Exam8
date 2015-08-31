@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-8-31 19:26:42 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hand.HibernateExam_8820.City" table="CITY">
+        <id name="city_id" type="int">
+            <column name="CITY_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="country_id" type="int">
+            <column name="COUNTRY_ID" />
+        </property>
+        <property name="last_update" type="java.sql.Date">
+            <column name="LAST_UPDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

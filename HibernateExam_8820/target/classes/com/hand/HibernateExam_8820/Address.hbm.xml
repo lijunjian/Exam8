@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-8-31 19:26:42 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hand.HibernateExam_8820.Address" table="ADDRESS">
+        <id name="address_id" type="int">
+            <column name="ADDRESS_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="address2" type="java.lang.String">
+            <column name="ADDRESS2" />
+        </property>
+        <property name="district" type="java.lang.String">
+            <column name="DISTRICT" />
+        </property>
+        <property name="city_id" type="int">
+            <column name="CITY_ID" />
+        </property>
+        <property name="postal_code" type="java.lang.String">
+            <column name="POSTAL_CODE" />
+        </property>
+        <property name="phone" type="java.lang.String">
+            <column name="PHONE" />
+        </property>
+        <property name="last_update" type="java.sql.Date">
+            <column name="LAST_UPDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

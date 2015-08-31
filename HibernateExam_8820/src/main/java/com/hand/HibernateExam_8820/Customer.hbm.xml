@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-8-31 19:26:42 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hand.HibernateExam_8820.Customer" table="CUSTOMER">
+        <id name="customer_id" type="java.lang.Integer" access="field">
+            <column name="CUSTOMER_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="store_id" type="java.lang.Integer">
+            <column name="STORE_ID" />
+        </property>
+        <property name="first_name" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+        <property name="last_name" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="address_id" type="java.lang.Integer">
+            <column name="ADDRESS_ID" />
+        </property>
+        <property name="create_date" type="java.util.Date">
+            <column name="CREATE_DATE" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+    </class>
+</hibernate-mapping>
