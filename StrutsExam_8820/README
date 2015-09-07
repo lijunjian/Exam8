@@ -1,0 +1,5 @@
+mvn clean
+mvn compile
+mvn tomcat:run
+在浏览器中输入如下地址：
+http://localhost:8080/StrutsExam_8820/login.jsp

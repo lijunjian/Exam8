@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- 配置根元素 -->
+
+<struts>
+	<!-- 配置web默认编码集，相当于HttpServletRequest.setChartacterEncoding用法 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<!-- 默认Struts2的请求后缀是.action,也就是我们不配置该元素,action/do都可以 -->
+	<constant name="struts。action.extension" value="do,action"></constant>
+	<!-- 设置浏览器是否缓存静态内容，默认值为true，在开发阶段建议关闭，防止修改后测试不到 -->
+	<constant name="struts.serve.static.browserCache" value="false"></constant>
+	<!-- 当struts配置文件修改后，系统是否自动重新加载该文件，默认为false -->
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	<!-- 默认视图主题 -->
+	<constant name="struts.ui.theme" value="simple"></constant>
+
+
+
+	<package name="test" extends="struts-default">
+	<interceptors>
+		<interceptor name="loginInterceptor" class="com.hand.action.LoginInterceptor"></interceptor>
+	</interceptors>
+		<action name="login" class="com.hand.action.LoginAction">
+			<interceptor-ref name="params"></interceptor-ref>
+			<interceptor-ref name="loginInterceptor"></interceptor-ref>
+			<result name="success">index.jsp</result>
+			<result name="fail">login.jsp</result>
+		</action>
+	</package>
+</struts>
